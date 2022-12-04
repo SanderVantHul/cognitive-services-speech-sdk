@@ -12,4 +12,6 @@ Proces text to speech:
 
 6. Now there is 2 white lines. Now replace all newlines with space. (regex: \n(?=\w+))
 
-7. Now run text to speech program
+7. Replace starting space if necessary (regex: ^\s*)
+
+8. Now run text to speech program
