@@ -316,11 +316,11 @@ namespace MicrosoftSpeechSDKSamples
             // Replace with your own subscription key and service region (e.g., "westus").
             // The default language is "en-us".
             var config = SpeechConfig.FromSubscription("YourSubscriptionKey", "YourServiceRegion");
-
+            config.SpeechSynthesisVoiceName = "en-US-SteffanNeural";
             // Sets the synthesis output format.
             // The full list of supported format can be found here:
             // https://docs.microsoft.com/azure/cognitive-services/speech-service/rest-text-to-speech#audio-outputs
-            config.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Audio16Khz32KBitRateMonoMp3);
+            config.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Audio48Khz192KBitRateMonoMp3);
 
             // here is plain text file. A simple logic is to split by lines which is a paragraph. 
             // we assume a paragraph won't exceed 10 min limit here. 
